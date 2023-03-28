@@ -8,7 +8,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.use(morgan('tiny'))
-
+app.use(express.static('build'))
 
 let persons = [
     { id: 1, name: 'Arto Hellas', number: '040-123456' },
@@ -67,7 +67,7 @@ app.post('/api/persons',  (req, res) => {
     id: id
   }
 
-  
+
   persons = persons.concat(addedPerson)
   res.json(addedPerson)
 })
