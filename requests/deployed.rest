@@ -1,0 +1,12 @@
+GET https://website-test-yt9h.onrender.com/api/persons
+###
+DELETE https://website-test-yt9h.onrender.com/api/persons/3
+Content-Type: application/json
+###
+POST https://website-test-yt9h.onrender.com/api/persons
+Content-Type: application/json
+
+{
+    "name": "elias",
+    "number": "123"
+}
