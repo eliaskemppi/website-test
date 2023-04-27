@@ -65,8 +65,6 @@ app.delete('/api/persons/:id',  (req, res, next) => {
 app.post('/api/persons',  (req, res, next) => {
   const body = req.body
 
-  console.log(body)
-
   const id = Math.floor(Math.random()*1000000)
 
   /*if (!body.name || !body.number) {
